@@ -1,0 +1,10 @@
+#libraries
+import requests as rq
+import pandas as pd
+import json as json
+
+#get data from Covid-API
+r =  rq.get('http://api.covidtracking.com')
+
+headers = r.json()
+print(headers)
